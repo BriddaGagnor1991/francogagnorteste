@@ -222,15 +222,14 @@ footer .footer-content img {
 
   /* Ajuste do player de vídeo */
   .video-placeholder {
-    width: 50%;
-    height: auto;
-    max-width: 50%;
+   width: 90%;               /* Reduz a largura para ocupar 90% da tela */
+   max-width: 300px;  
     aspect-ratio: 16 / 9; /* Mantém proporção do player */
   }
 
   /* Ajustes nas colunas da home */
   .video-column, .text-column {
-    max-width: 50%;
+    max-width: 100%;
     flex: 1 1 100%;
   }
 
