@@ -135,6 +135,7 @@ footer .footer-content img {
   font-family: Verdana, sans-serif;
   color: #000;
   padding: 30px;
+  gap: 20px;
 }
 
 .form-contato {
