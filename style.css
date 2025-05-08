@@ -189,58 +189,81 @@ footer .footer-content img {
 /* -------- RESPONSIVIDADE -------- */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   nav ul li {
-    margin: 10px 0;
+      margin: 10px 0;
   }
 
   footer .footer-content {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   footer .footer-content img {
-    width: 60px;
-    margin-bottom: 10px;
+      width: 60px;
+      margin-bottom: 10px;
   }
 
+  /* Home */
   .custom-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+      flex-direction: column;
+      align-items: center;
   }
 
   .video-placeholder {
-    height: auto;
-    aspect-ratio: 1 / 1;
+      height: auto;
+      max-height: 300px; /* Ajustado para dispositivos móveis */
+      aspect-ratio: 16 / 9;
   }
 
+  /* Sobre */
   .sobre-franco-gagnor {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+      flex-direction: column;
+      align-items: center;
   }
 
+  /* Contato */
   .contato-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+      flex-direction: column;
+      padding: 10px;
+      gap: 20px; /* Adiciona espaço entre o formulário e a imagem */
   }
 
   .form-contato,
   .imagem-contato {
-    width: 100%;
+      width: 100%;
   }
 
-  .text-column {
-    padding: 10px;
-    font-size: 14px;
+  .form-contato label {
+      display: block;
+      font-size: 13px;
+      margin: 8px 0 4px;
   }
 
-  nav ul li a {
-    font-size: 18px;
+  .form-contato input,
+  .form-contato textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 13px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+  }
+
+  .form-contato button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  .form-contato button:hover {
+      background-color: #333;
   }
 }
