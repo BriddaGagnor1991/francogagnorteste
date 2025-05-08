@@ -374,9 +374,9 @@ footer .footer-content img {
   background-color: #333;
 }
 
-/* Responsividade */
-/* Responsividade */
+/* Responsividade - Ajustes para telas pequenas (celular) */
 @media (max-width: 768px) {
+  
   /* Menu */
   nav ul {
     flex-direction: column;
@@ -388,7 +388,7 @@ footer .footer-content img {
     margin: 10px 0;
   }
 
-  /* Ajustes no Rodapé */
+  /* Rodapé */
   footer .footer-content {
     flex-direction: column;
     align-items: center;
@@ -399,46 +399,48 @@ footer .footer-content img {
     margin-bottom: 10px;
   }
 
-  /* Ajustes na Home */
+  /* Home - Ajustes nas seções */
   .custom-section {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     padding: 10px;
   }
 
+  /* Ajuste do player de vídeo */
   .video-placeholder {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9; /* Ajuste o player para manter a proporção */
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém proporção do player */
   }
 
+  /* Ajustes nas colunas da home */
   .video-column, .text-column {
     max-width: 100%;
     flex: 1 1 100%;
   }
 
-  /* Ajustes no Sobre */
+  /* Sobre - Ajustes */
   .sobre-franco-gagnor {
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
 
-  /* Ajustes no Contato */
+  /* Contato - Ajuste do layout de formulário e imagem */
   .contato-container {
     flex-direction: column;
-    padding: 10px;
-    gap: 20px;
+    padding: 20px;
+    gap: 20px;  /* Adiciona espaço entre os elementos */
   }
 
   .form-contato,
   .imagem-contato {
     width: 100%;
-    margin-bottom: 20px; /* Espaçamento entre imagem e formulário */
   }
 
-  /* Form inputs */
+  /* Ajustes no espaçamento do formulário */
   .form-contato label {
     display: block;
     font-size: 13px;
@@ -468,31 +470,10 @@ footer .footer-content img {
   .form-contato button:hover {
     background-color: #333;
   }
-}
 
-/* Ajustes específicos para a Home */
-@media (max-width: 768px) {
-  .custom-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .video-placeholder {
-    height: auto;
-    aspect-ratio: 16 / 9; /* Proporção ajustada */
+  /* Ajuste de espaço entre a imagem e o formulário no Contato */
+  .contato-container .imagem-contato {
+    margin-bottom: 20px;
   }
 }
 
-/* Ajustes específicos para o Contato */
-@media (max-width: 768px) {
-  .contato-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .form-contato,
-  .imagem-contato {
-    width: 100%;
-  }
-}
