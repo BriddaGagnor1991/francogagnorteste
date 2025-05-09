@@ -23,14 +23,20 @@
     <section id="home">
         <div class="custom-section">
             <div class="video-column">
-  <!-- Substitua este div pelo seu vídeo real (iframe, video, etc) -->
   <div>
-    <video width="100%" height="auto" autoplay muted playsinline class="video-placeholder" preload="auto">
+    <video id="myVideo" class="video-placeholder" muted playsinline preload="auto" width="100%" height="auto">
       <source src="img/logovideo.mp4" type="video/mp4">
       Seu navegador não suporta a reprodução de vídeo.
     </video>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("myVideo");
+    video.play();
+  });
+</script>
             </div>
             <div class="text-column">
                 <h2>Preços Especiais para Atacadistas, Lojistas e Revendedores</h2><br>
