@@ -186,7 +186,6 @@ footer .footer-content img {
   background-color: #333;
 }
 
-
 /* -------- RESPONSIVIDADE -------- */
 /* Responsividade - Ajustes para telas pequenas (celular) */
 @media (max-width: 768px) {
@@ -223,16 +222,18 @@ footer .footer-content img {
 
   /* Ajuste do player de vídeo */
   .video-placeholder {
-    width: 85%;               /* Reduz a largura para 85% da tela */
-    max-width: 300px;         /* Limita o tamanho máximo do vídeo */
+    width: 90%;               /* Reduz a largura para 90% da tela */
+    max-width: 280px;         /* Limita o tamanho máximo do vídeo */
     height: auto;             /* Ajusta a altura automaticamente */
     aspect-ratio: 16 / 9;     /* Mantém a proporção do player */
+    margin-bottom: 20px;      /* Adiciona espaço entre o vídeo e o texto */
   }
 
   /* Ajustes nas colunas da home */
   .video-column, .text-column {
     max-width: 100%;
     flex: 1 1 100%;
+    padding: 0 10px;          /* Adiciona espaçamento entre as colunas */
   }
 
   /* Sobre - Ajustes */
