@@ -216,7 +216,7 @@ footer .footer-content img {
   .custom-section {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 10px;
   }
 
@@ -225,7 +225,7 @@ footer .footer-content img {
     width: 90%;               /* Reduz a largura para 90% da tela */
     max-width: 280px;         /* Limita o tamanho máximo do vídeo */
     height: auto;             /* Ajusta a altura automaticamente */
-    aspect-ratio: 16 / 9;     /* Mantém a proporção do player */
+    aspect-ratio: 14 / 7;     /* Mantém a proporção do player */
     margin-bottom: 20px;      /* Adiciona espaço entre o vídeo e o texto */
   }
 
