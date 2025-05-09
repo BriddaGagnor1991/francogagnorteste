@@ -223,7 +223,7 @@ footer .footer-content img {
   /* Ajuste do player de vídeo */
   .video-placeholder {
     width: 90%;               /* Reduz a largura para 90% da tela */
-    max-width: 280px;         /* Limita o tamanho máximo do vídeo */
+    max-width: 200px;         /* Limita o tamanho máximo do vídeo */
     height: auto;             /* Ajusta a altura automaticamente */
     aspect-ratio: 14 / 7;     /* Mantém a proporção do player */
     margin-bottom: 20px;      /* Adiciona espaço entre o vídeo e o texto */
