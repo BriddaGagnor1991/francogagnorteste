@@ -190,20 +190,21 @@ footer .footer-content img {
 /* Responsividade - Ajustes para telas pequenas (celular) */
 @media (max-width: 768px) {
 
- /* Menu */
+/* Menu */
   nav {
     position: relative; /* Garante que o menu não fique fixo no topo */
-    background-color: #000; /* Cor do fundo do menu */
+    background-color: #000;
     width: 100%;
-    padding-bottom: 10px; /* Espaçamento abaixo do menu */
+    padding: 0; /* Remove o padding para não ter espaço extra */
   }
 
   nav ul {
-    display: flex; /* Torna os itens em linha no desktop */
-    flex-direction: column; /* Torna os itens em coluna em telas pequenas */
+    display: flex; /* Flexbox para os itens do menu */
+    flex-direction: column; /* Itens em uma coluna */
     align-items: center; /* Centraliza os itens */
     padding: 0;
     margin: 0;
+    list-style-type: none; /* Remove os marcadores de lista */
   }
 
   nav ul li {
@@ -212,9 +213,9 @@ footer .footer-content img {
 
   nav ul li a {
     color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
-    padding: 10px 15px; /* Ajusta o padding dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 15px; /* Ajusta o padding */
+    font-size: 18px; /* Tamanho do texto */
   }
 
   /* Efeito de hover no menu */
