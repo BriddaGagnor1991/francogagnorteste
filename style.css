@@ -194,7 +194,7 @@ footer .footer-content img {
   nav {
     position: relative; /* Garante que o menu não fique fixo nem sobreposto */
     z-index: 1;
-    background-color: #fff;
+    background-color: #000;
     width: 100%;
   }
 
