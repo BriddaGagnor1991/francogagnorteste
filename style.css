@@ -131,6 +131,7 @@ footer .footer-content img {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 20px; /* <-- Espaçamento entre o formulário e a imagem */
   justify-content: space-between;
   font-family: Verdana, sans-serif;
   color: #000;
