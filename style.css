@@ -77,7 +77,89 @@ footer .footer-content img {
   border-radius: 5px;
 }
 
-/* Estilo geral das seções */
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  footer .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer .footer-content img {
+      width: 60px;
+      margin-bottom: 10px;
+  }
+
+  /* Ajustes na Home */
+  .custom-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .video-placeholder {
+      height: auto;
+      aspect-ratio: 1 / 1;
+  }
+
+  /* Ajustes no Sobre */
+  .sobre-franco-gagnor {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Ajustes no Contato */
+  .contato-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .form-contato,
+  .imagem-contato {
+      width: 100%;
+  }
+
+  /* Form inputs */
+  .form-contato label {
+      display: block;
+      font-size: 13px;
+      margin: 8px 0 4px;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 13px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+  }
+
+  .form-contato button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  .form-contato button:hover {
+      background-color: #333;
+  }
+}
+
+/* pagina home */
+
 .custom-section {
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +196,31 @@ footer .footer-content img {
   border: 1px solid #ccc;
 }
 
-/* Ajustes para a página de Contato */
+@media (max-width: 768px) {
+  .custom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-placeholder {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* pagina sobre*/
+
+.sobre-franco-gagnor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 25px;
+  font-family: Verdana, sans-serif;
+  color: #000000;
+  padding: 30px;
+}
+
 .contato-container {
   display: flex;
   flex-direction: row;
@@ -139,7 +245,6 @@ footer .footer-content img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 20px;  /* Espaço entre a imagem e o formulário */
 }
 
 /* Form inputs */
@@ -174,79 +279,14 @@ footer .footer-content img {
   background-color: #333;
 }
 
-/* Responsivo para telas menores */
+/* Responsivo */
 @media (max-width: 768px) {
-  /* Menu */
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  /* Rodapé */
-  footer .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .footer-content img {
-    width: 60px;
-    margin-bottom: 10px;
-  }
-
-  /* Ajustes na Home */
-  .custom-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video-placeholder {
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
-
-  /* Ajustes no Contato */
   .contato-container {
     flex-direction: column;
-    padding: 10px;
   }
 
   .form-contato,
   .imagem-contato {
     width: 100%;
-  }
-
-  /* Form inputs */
-  .form-contato label {
-    display: block;
-    font-size: 13px;
-    margin: 8px 0 4px;
-  }
-
-  .form-contato input,
-  .form-contato textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 13px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  .form-contato button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  .form-contato button:hover {
-    background-color: #333;
   }
 }
