@@ -221,13 +221,22 @@ footer .footer-content img {
   }
 
   /* Ajuste do player de vídeo */
-  .video-placeholder {
-    width: 90%;               /* Reduz a largura para 90% da tela */
-    max-width: 200px;         /* Limita o tamanho máximo do vídeo */
-    height: auto;             /* Ajusta a altura automaticamente */
-    aspect-ratio: 14 / 7;     /* Mantém a proporção do player */
-    margin-bottom: 20px;      /* Adiciona espaço entre o vídeo e o texto */
-  }
+ .video-placeholder {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.video-placeholder video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 
   /* Ajustes nas colunas da home */
   .video-column, .text-column {
