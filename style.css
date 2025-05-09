@@ -191,10 +191,18 @@ footer .footer-content img {
 @media (max-width: 768px) {
 
   /* Menu */
+  nav {
+    position: relative; /* Garante que o menu não fique fixo nem sobreposto */
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
+    margin: 0;
   }
 
   nav ul li {
@@ -218,31 +226,31 @@ footer .footer-content img {
     align-items: center;
     gap: 20px;
     padding: 10px;
+    margin-top: 20px; /* Garante que o conteúdo não fique embaixo do menu */
   }
 
   /* Ajuste do player de vídeo */
- .video-placeholder {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  padding: 0;
-  margin: 0 auto;
-}
+  .video-placeholder {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-.video-placeholder video {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 280px;
-  margin: 0 auto;
-}
-
+  .video-placeholder video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+  }
 
   /* Ajustes nas colunas da home */
   .video-column, .text-column {
     max-width: 100%;
     flex: 1 1 100%;
-    padding: 0 10px;          /* Adiciona espaçamento entre as colunas */
+    padding: 0 10px;
   }
 
   /* Sobre - Ajustes */
@@ -256,7 +264,7 @@ footer .footer-content img {
   .contato-container {
     flex-direction: column;
     padding: 20px;
-    gap: 20px;  /* Adiciona espaço entre os elementos */
+    gap: 20px;
   }
 
   .form-contato,
