@@ -190,26 +190,38 @@ footer .footer-content img {
 /* Responsividade - Ajustes para telas pequenas (celular) */
 @media (max-width: 768px) {
 
-  /* Menu */
+ /* Menu */
   nav {
-  position: relative !important;
-  z-index: 1 !important;
-  background-color: #000 !important;
-  width: 100%;
-  padding-bottom: 10px; /* Garante espaço visual após o menu */
-}
+    position: relative; /* Garante que o menu não fique fixo no topo */
+    background-color: #000; /* Cor do fundo do menu */
+    width: 100%;
+    padding-bottom: 10px; /* Espaçamento abaixo do menu */
+  }
 
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+    display: flex; /* Torna os itens em linha no desktop */
+    flex-direction: column; /* Torna os itens em coluna em telas pequenas */
+    align-items: center; /* Centraliza os itens */
+    padding: 0;
     margin: 0;
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Espaçamento entre os itens */
   }
 
+  nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    padding: 10px 15px; /* Ajusta o padding dos links */
+  }
+
+  /* Efeito de hover no menu */
+  nav ul li a:hover {
+    background-color: #333; /* Cor do fundo ao passar o mouse */
+  }
+}
   /* Rodapé */
   footer .footer-content {
     flex-direction: column;
